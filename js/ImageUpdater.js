@@ -13,8 +13,8 @@ function LoadImage(hour, category) {
 	console.log("Load Image called : hour "+hour+ "- Category: "+category ) ;
 	
 
-	const LoadPath = BaseDir + "/" + category + "/" + hour + Extension;
-	const LoadPath2 = BaseDir + "/" + category + "/" + hour + Extension;
+	const LoadPath = BaseDir + "/" + category + "/" +category+"_"+ hour + Extension;
+	const LoadPath2 = BaseDir + "/" + category + "/"+category+"_" + hour + Extension;
 	
 	$('#ImageFrame1').attr("src", LoadPath);
 	$('#ImageFrame2').attr("src", LoadPath);
