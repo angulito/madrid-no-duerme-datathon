@@ -17,7 +17,7 @@ function LoadImage(hour, category) {
 	const LoadPath2 = BaseDir + "/" + category + "/"+category+"_" + hour +"_timeline"+ Extension;
 	
 	$('#ImageFrame1').attr("src", LoadPath);
-	$('#ImageFrame2').attr("src", LoadPath);
+	$('#ImageFrame2').attr("src", LoadPath2);
 
 }
 
