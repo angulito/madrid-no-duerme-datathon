@@ -1,4 +1,4 @@
-var CURRENT_CATEGORY = 'daily';
+var CURRENT_CATEGORY = 'weekday';
 
 $.extend( $.ui.slider.prototype.options, { 
     animate: 300
