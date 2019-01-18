@@ -1,4 +1,4 @@
-const BaseDir = "./data";
+const BaseDir = "https://s3-eu-west-1.amazonaws.com/madrid-no-duerme-datathon-assets";
 const Extension = ".jpg";
 const GreyImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEWSkpIEm0u0AAAANklEQVR42u3BAQEAAACCoP6vbojAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADiDoIAAAEB9TdeAAAAAElFTkSuQmCC";
 
