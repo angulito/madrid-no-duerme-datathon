@@ -1,20 +1,23 @@
-const BaseDir = "./Data";
+const BaseDir = "./data";
 const Extension = ".jpg";
 const GreyImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEWSkpIEm0u0AAAANklEQVR42u3BAQEAAACCoP6vbojAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADiDoIAAAEB9TdeAAAAAElFTkSuQmCC";
 
 function ResetImage() {
 
-	$('#ImageFrame').attr("src", GreyImage);
+	$('#ImageFrame1').attr("src", GreyImage);
+	$('#ImageFrame2').attr("src", GreyImage);
 
 }
 	
 function LoadImage(hour, category) {
-
+	console.log("Load Image called : hour "+hour+ "- Category: "+category ) ;
 	
 
 	const LoadPath = BaseDir + "/" + category + "/" + hour + Extension;
+	const LoadPath2 = BaseDir + "/" + category + "/" + hour + Extension;
 	
-	$('#ImageFrame').attr("src", LoadPath);
+	$('#ImageFrame1').attr("src", LoadPath);
+	$('#ImageFrame2').attr("src", LoadPath);
 
 }
 
