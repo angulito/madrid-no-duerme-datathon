@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <meta charset="utf8">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/jqueryui.min.css">
     <link rel="stylesheet" href="styles/jquery-ui-slider-pips.min.css">
@@ -15,7 +15,14 @@
     <div class="container-fluid wrapper">
         <div class="row">
             <div class="container">
-                <div id="box" class="box-blur">
+                <div id="box" class="box-blur " style="    background: url(imgs/Header.jpg);">
+                <div class="section-name">
+	        		<span class="section-name-title">
+	    				
+		     				<h2>Madrid no duerme.</h2>
+		     			
+	    			</span>
+	        	</div>
 
 
                 </div>
@@ -24,35 +31,44 @@
 
                 <ul class="sub-menu visible-md-block visible-lg-block">
 
-
                     <li>
-                        <a href="#" class="sub-menu-item">Acerca de Datos Abiertos </a>
+                        <a href="#" onclick="show('weekend')"class="sub-menu-item">Fin de semana</a>
                     </li>
 
 
                     <li>
-                        <a href="#" class="sub-menu-item">En portada</a>
+                        <a href="#" onclick="show('daily')"class="sub-menu-item">Diario</a>
                     </li>
 
 
                     <li>
-                        <a href="#" class="sub-menu-item">Catálogo de datos</a>
+                        <a href="#" onclick="show('summer')"class="sub-menu-item">Verano</a>
                     </li>
-
-
                     <li>
-                        <a href="#" class="sub-menu-item">Colabora</a>
+                        <a href="#" onclick="show('christmas')"class="sub-menu-item">Navidades</a>
                     </li>
 
                 </ul>
 
             </div>
         </div>
-        <main>
-            <div class="stuff">
+        <div class="col-md-5" style="text-align: center;margin-top: 20px;   ">
+            <div >
                <div id="flat-slider-vertical-2"></div>
             </div>
-        </main>
+        </div>
+        <div class="col-md-6">
+                <div class="row">
+                        <div class="col-md-8">
+                        
+                        </div>
+                </div>
+                <div class="row">
+                            <div class="col-md-8">
+                        
+                        </div>
+                </div>
+        </div>
 
     </div>
 
@@ -62,6 +78,7 @@
 <script type="text/javascript" src="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/js/jquery-ui-slider-pips.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="js/ImageUpdater.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </html>

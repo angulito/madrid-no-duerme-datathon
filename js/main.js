@@ -14,30 +14,12 @@ $("#flat-slider")
         last: "pip"
     });
 
-$("#flat-slider-vertical-1")
-    .slider({
-        max: 25,
-        min: 0,
-        range: "min",
-        value: 25,
-        orientation: "vertical"
-    });
-
     $("#flat-slider-vertical-2")
     .slider({
-        max: 25,
+        max: 24,
         min: 0,
         range: "max",
         value: 12,
-        orientation: "vertical"
-    });
-
-$("#flat-slider-vertical-3")
-    .slider({
-        max: 25,
-        min: 0,
-        range: "min",
-        value: 0,
         orientation: "vertical"
     });
 
@@ -47,3 +29,7 @@ $("#flat-slider-vertical-3")
         last: "pip"
     })
     .slider("float");
+    
+$(document).ready(function(){
+    
+});

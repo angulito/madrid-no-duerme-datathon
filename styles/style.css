@@ -1,8 +1,4 @@
-.sub-menu{
-    margin: 0px 10px;
-    
-    }
-    
+
     .sub-menu-item {
     font-size: 1.125em;
     color: #000;
@@ -18,7 +14,9 @@ a:active {
     outline: 0;
     color :block;
 }
-
+.sub-menu{
+  padding: 0px 20px;
+  }
 .sub-menu>li.active, .sub-menu>li:hover {
     background-color: #fff;
     -ms-filter: none;
@@ -51,7 +49,7 @@ a:active {
 body {
   font: 12px/1.4 'Helvetica','Arial', sans-serif;
   color: #a1a7a6;
-    background-color : #f4f3f3;
+  background-color : #f4f3f3;
 }
 
 .panel {
@@ -73,15 +71,6 @@ body {
   padding: 0 10px;
 }
 
-.easyPieChart {
-  position: relative;
-  text-align: center;
-}
-.easyPieChart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .percentage,
 .label {
@@ -120,7 +109,11 @@ sup {
 #box {
     position: relative;
     background-color: #ffffff;
-    height: 400px;
+    height: 330px;
+    width:100%;
+    background-size :  cover;
+    
+    
 }
   
   
@@ -144,3 +137,23 @@ sup {
 /*    -webkit-transition: 0.2s;*/
 /*    transition: 0.2s;*/
 /*}*/
+
+.section-name{
+     display: table;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center; 
+}
+.section-name-title{
+  
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  
+  
+  .ui-slider-vertical {
+    width: .8em;
+    height: 200px !important;
+}

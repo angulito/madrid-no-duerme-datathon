@@ -2,6 +2,7 @@
 [id*=flat-slider].ui-slider,
 [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line {
   background: #7e8c9f;
+      display: inline-flex;
 }
 
 [id*=flat-slider].ui-slider .ui-slider-handle .ui-slider-tip:after {
@@ -15,7 +16,7 @@
 }
 
 body {
-  background: #434d5a;
+
   font-family: "Roboto";
 }
 
