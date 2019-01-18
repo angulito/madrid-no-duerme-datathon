@@ -1,0 +1,27 @@
+version: 2
+jobs:
+
+  deploy:
+    docker:
+      - image: angulito/aws-cli-docker:1.16.86
+    environment:
+      - AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+    steps:
+
+      - checkout
+
+      - run:
+          name: Deploy 
+          command: |
+            aws s3 sync . s3://madrid-no-duerme-datathon  --exclude ".*/*" --exclude ".*"
+
+workflows:
+  version: 2
+
+  build-deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
